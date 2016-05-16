@@ -18,6 +18,3 @@ ENV PATH /opt/conda/bin:$PATH
 
 RUN conda install markdown==2.6.6
 RUN pip install pelican==3.6.3
-
-RUN git clone https://github.com/matthewgilbert/blog.git /home/matthew/Projects/blog && \
-    cd /home/matthew/Projects/blog && git submodule init && git submodule update
